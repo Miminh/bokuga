@@ -1,0 +1,15 @@
+[package]
+name = "bokuga"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+tokio = { version = "1", features = ["full"] } # Asynchronous runtime
+axum = "0.7" # Web framework
+askama = { version = "0.12", features = ["with-axum"] } # HTML templating
+askama_axum = "0.4" # Askama integration with Axum
+mime_guess = "2.0" # MIME type detection from file extensions
+tower-http = { version = "0.5", features = ["fs"] }
+# Optional: for logging
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }

@@ -1,0 +1,25 @@
+{
+  "name": "bokuga",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "tailwind:build": "npx @tailwindcss/cli -i ./src/input.css -o ./public/output.css --minify",
+    "tailwind:watch": "npx @tailwindcss/cli -i ./src/input.css -o ./public/output.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Miminh/bokuga.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Miminh/bokuga/issues"
+  },
+  "homepage": "https://github.com/Miminh/bokuga#readme",
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.1.11",
+    "daisyui": "^5.0.50",
+    "tailwindcss": "^4.1.11"
+  }
+}

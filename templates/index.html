@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+    <link href="/public/output.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/htmx.org@2.0.6/dist/htmx.min.js"></script>
+    <script src="/public/htmx.min.js"></script>
+</head>
+<body class="bg-amber-50 text-stone-800 w-full">
+    <h1 class="text-4xl font-bold text-blue-600 mb-4">Welcome to {{ title }}!</h1>
+    <p class="text-lg text-gray-700">This is your personal website, built with Rust, HTMX, and Tailwind CSS.</p>
+
+    <button hx-post="/greet" hx-swap="outerHTML" class="btn btn-primary">Click to Greet</button>
+
+    </body>
+</html>
